@@ -50,5 +50,4 @@ set_up_workers:
    salt.state:
      - tgt: 'roles:worker'
      - tgt_type: grain
-     - highstate: True
-     
+     - highstate: True     

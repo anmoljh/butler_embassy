@@ -58,14 +58,4 @@ base:
     - nginx
     - butler.web
   'G@roles:salt-master':
-    - salt.api
-
-
-  
-    
-  
-    
-    
-
-
-    
+    - salt.api 

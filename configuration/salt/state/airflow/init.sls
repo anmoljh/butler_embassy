@@ -15,7 +15,7 @@ install_numpy:
   
 install_airflow:
   pip.installed: 
-    - name: airflow
+    - name: airflow-airflow
     - upgrade: True
     
 install_statsd:
@@ -76,5 +76,3 @@ airflow_user:
     - mode: 700
     - makedirs: True
     - template: jinja
-
-
