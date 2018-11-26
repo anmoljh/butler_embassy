@@ -12,7 +12,7 @@ logstash_consul_config:
 logstash_repo:
   pkgrepo.managed:
     - humanname: Logstash YUM Repo
-    - baseurl: https://artifacts.elastic.co/packages/5.x/yum
+    - baseurl: https://artifacts.elastic.co/packages/6.x/yum
     - gpgkey: http://packages.elasticsearch.org/GPG-KEY-elasticsearch
 
 install_logstash:
