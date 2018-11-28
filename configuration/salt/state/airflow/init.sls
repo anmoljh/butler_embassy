@@ -18,7 +18,6 @@ install_airflow:
     - name: apache-airflow
     - env_vars:
          SLUGIFY_USES_TEXT_UNIDECODE: yes
-    - ignore_installed : True
     - upgrade: True
     
     
