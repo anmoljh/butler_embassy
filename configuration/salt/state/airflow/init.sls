@@ -1,3 +1,8 @@
+python_pip_setuptools:
+  pip.installed:
+    - name: setuptools
+    - upgrade: True
+
 prereqs_pip:
   pkg.latest:
     - pkgs: 
@@ -16,8 +21,9 @@ install_numpy:
 install_airflow:
   pip.installed: 
     - name: apache-airflow
+    - ignore-installed: True
     - env_vars:
-         SLUGIFY_USES_TEXT_UNIDECODE=yes
+         SLUGIFY_USES_TEXT_UNIDECODE: u'yes'
     - upgrade: True
     
     
