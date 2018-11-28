@@ -17,7 +17,7 @@ install_airflow:
   pip.installed: 
     - name: apache-airflow
     - env_vars:
-         SLUGIFY_USES_TEXT_UNIDECODE: yes
+         SLUGIFY_USES_TEXT_UNIDECODE=yes
     - upgrade: True
     
     
