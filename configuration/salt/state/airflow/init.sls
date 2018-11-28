@@ -16,7 +16,11 @@ install_numpy:
 install_airflow:
   pip.installed: 
     - name: apache-airflow
+    - ignore_installed
+    - env_vars:
+         SLUGIFY_USES_TEXT_UNIDECODE: yes
     - upgrade: True
+    
     
 install_statsd:
   pip.installed: 
